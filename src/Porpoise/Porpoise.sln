@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porpoise.FEContainer", "Porpoise.FEContainer\Porpoise.FEContainer.csproj", "{3113709A-03FB-410B-866A-CD336698C862}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3113709A-03FB-410B-866A-CD336698C862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3113709A-03FB-410B-866A-CD336698C862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3113709A-03FB-410B-866A-CD336698C862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3113709A-03FB-410B-866A-CD336698C862}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20FA0140-31D2-4161-B30E-1799952C6EFD}
+	EndGlobalSection
+EndGlobal
