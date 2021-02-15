@@ -16,8 +16,6 @@ namespace Porpoise.FEContainer
 {
     public class Startup
     {
-        private IPorpoiseDataReader dataReader;
-
         public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -33,13 +31,13 @@ namespace Porpoise.FEContainer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-
             services.AddScoped<IPorpoiseDataReader, PorpoiseDataFileReader>();
-            dataReader = new PorpoiseDataFileReader();
+            services.AddScoped<IViewRenderService, ViewRenderService>();
+            services.AddHttpContextAccessor();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IViewRenderService viewRenderService, IPorpoiseDataReader dataReader)
         {
             if (env.IsDevelopment())
             {
@@ -54,7 +52,8 @@ namespace Porpoise.FEContainer
             app.UseHttpsRedirection();
 
             app.UsePorpoiseDataLoader(dataReader);
-            app.UsePorpoiseRouter();
+
+            app.UsePorpoiseRouter(viewRenderService);
         }
     }
 }
