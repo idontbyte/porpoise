@@ -15,6 +15,8 @@ Things to consider for future -
 * Blocks / Data Pickers
 * Indexing
 * HTML helpers
+* Membership
+* Navigation
 
 ## Project status - Early development
 
