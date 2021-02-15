@@ -16,4 +16,7 @@ Things to consider for future -
 * Indexing
 * HTML helpers
 
+## Project status - Early development
 
+This project will always remain open source.
+We are in early development phase, there will be lots of breaking changes and new features added over the coming months.
