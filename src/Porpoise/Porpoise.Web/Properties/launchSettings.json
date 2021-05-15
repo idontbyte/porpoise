@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Porpoise.FEContainer": {
+    "Porpoise.Web": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

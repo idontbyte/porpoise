@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Porpoise.FEContainer.Middleware;
-using Porpoise.FEContainer.Services;
-using Porpoise.FEContainer.Services.Interfaces;
+using Porpoise.Web.Middleware;
+using Porpoise.Web.Services;
+using Porpoise.Web.Services.Interfaces;
 
-namespace Porpoise.FEContainer
+namespace Porpoise.Web
 {
     public class Startup
     {

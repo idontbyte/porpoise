@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.AspNetCore.Builder;
-using Porpoise.FEContainer.Services;
-using Porpoise.FEContainer.Services.Interfaces;
+using Porpoise.Web.Services;
+using Porpoise.Web.Services.Interfaces;
 
-namespace Porpoise.FEContainer.Middleware
+namespace Porpoise.Web.Middleware
 {
     public static class PorpoiseDataLoader
     {

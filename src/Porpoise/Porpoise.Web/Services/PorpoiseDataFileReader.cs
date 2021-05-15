@@ -1,12 +1,12 @@
 ﻿using System;
-using Porpoise.FEContainer.Services.Interfaces;
+using Porpoise.Web.Services.Interfaces;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Dynamic;
 
-namespace Porpoise.FEContainer.Services
+namespace Porpoise.Web.Services
 {
     public class PorpoiseDataFileReader : IPorpoiseDataReader
     {

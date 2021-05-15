@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <PreserveCompilationContext>true</PreserveCompilationContext>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>2248bc28-0168-4314-b615-fc37d07d43f8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Routing;
 
-namespace Porpoise.FEContainer.Services
+namespace Porpoise.Web.Services
 {
     public interface IViewRenderService
     {

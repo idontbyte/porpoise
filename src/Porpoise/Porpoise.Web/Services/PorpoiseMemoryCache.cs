@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Porpoise.FEContainer.Services
+namespace Porpoise.Web.Services
 {
     public static class PorpoiseMemoryCache
     {

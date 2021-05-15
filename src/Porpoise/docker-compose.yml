@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+  porpoise.web:
+    image: ${DOCKER_REGISTRY-}porpoise
+    build:
+      context: .
+      dockerfile: Porpoise.Web/Dockerfile
+    container_name: porpoise-web
+
+  porpoise.cms:
+    image: ${DOCKER_REGISTRY-}porpoise
+    build:
+      context: .
+      dockerfile: Porpoise.CMS/Dockerfile
+    container_name: porpoise-cms
+
+  porpoise.database:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "DefaultPorpoiseDBPass123!"
+      ACCEPT_EULA: "Y"
+    container_name: porpoise-data
